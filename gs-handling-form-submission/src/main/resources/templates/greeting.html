@@ -1,0 +1,20 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head> 
+    <title>Twitter Search Engine</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+	<h1>Twitter Search Engine v.1.0.0.0.0 </h1>
+	<h2>Created by Patrick, Nelly, James</h2>
+    <form action="#" th:action="@{/greeting}" th:object="${greeting}" method="post">
+    
+    	<p>Enter search query: <input type="text" th:field="*{content}" /></p>
+    	
+    	 <p>Number of results: <input type="text" th:field="*{numResults}" /></p> 
+        
+        <p><input type="submit" value="Search" /> <input type="reset" value="Clear" /></p>
+        
+    </form>
+</body>
+</html>
